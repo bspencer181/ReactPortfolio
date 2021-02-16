@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <div className="footer-container">
-        
       <section class="social-media">
         <div class="social-media-wrap">
           <div class="social-icons">
@@ -35,12 +34,9 @@ function Footer() {
             >
               <i class="far fa-file" />
             </Link>
-            
           </div>
         </div>
-        
       </section>
-      &copy; 2020 Beth Spencer &bull; (620) 605-2613 &bull; beth.spencer88@icloud.com
     </div>
   );
 }

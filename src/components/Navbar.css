@@ -27,11 +27,7 @@
     display: flex;
     align-items: center;
   }
-  
-  .fa-earlybirds {
-    margin-left: 0.5rem;
-    font-size: 1.8rem;
-  }
+
   
   .nav-menu {
     display: grid;
@@ -39,8 +35,8 @@
     grid-gap: 10px;
     list-style: none;
     text-align: center;
-    width: 60vw;
-    justify-content: end;
+    width: 15vw;
+    justify-content:first baseline;
     margin-right: 2rem;
   }
   
