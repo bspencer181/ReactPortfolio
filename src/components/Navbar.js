@@ -1,20 +1,70 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from "./Button";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
+//changes nav to hamburger when in mobile
 function Navbar() {
+    const [click, setClick] = useState(false);
+    // eslint-disable-next-line no-unused-vars
+    const [button, setButton] = useState(true);
+  
+    const handleClick = () => setClick(!click);
+    const closeMobileMenu = () => setClick(false);
+  
+    const showButton = () => {
+      if (window.innerWidth <= 960) {
+        setButton(false);
+      } else {
+        setButton(true);
+      }
+    };
+  //removes button on refresh
+    useEffect(() => {
+      showButton();
+    }, []);
+  
+    window.addEventListener('resize', showButton);
+
     return (
         <>
-         <nav className="navbar">
-            <div className="navbar-container">
-                <Link to="/" className="navbar-logo">
-                    Beth <i className="fab fa-earlybirds" />
-                </Link>
-            </div> 
-         </nav>
-        </>
-    )
-}
+          <nav className='navbar'>
+            <div className='navbar-container'>
+              <div className='menu-icon' onClick={handleClick}>
+                <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+              </div>
+              <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                <li className='nav-item'>
+                  <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                    Home
+                  </Link>
+                </li>
+                <li className='nav-item'>
+                  <Link
+                    to='/portfolio'
+                    className='nav-links'
+                    onClick={closeMobileMenu}
+                  >
+                    Portfolio
+                  </Link>
+                </li>
 
-export default Navbar
+
+                <li className='nav-item'>
+                  <Link
+                    to='/contact'
+                    className='nav-links'
+                    onClick={closeMobileMenu}
+                  >
+                    Contact
+                  </Link>
+                </li>
+
+
+              </ul>
+            </div>
+          </nav>
+        </>
+      );
+    }
+    
+    export default Navbar;
