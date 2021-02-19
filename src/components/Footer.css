@@ -5,11 +5,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
   }
   
 
   /* Social Icons */
+  .contact {
+    font-size: 20px;
+    height: auto;
+    padding: 5px;
+    color: white;
+  }
   .social-icon-link {
     color: #fff;
     font-size: 40px;

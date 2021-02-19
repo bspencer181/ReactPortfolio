@@ -7,10 +7,12 @@ function Footer() {
     <div className="footer-container">
       <section class="social-media">
         <div class="social-media-wrap">
+          
           <div class="social-icons">
+            
             <Link
               class="social-icon-link github"
-              to="/"
+              to={{ pathname: "https://github.com/bspencer181" }}
               target="_blank"
               aria-label="GitHub"
             >
@@ -19,7 +21,7 @@ function Footer() {
 
             <Link
               class="social-icon-link linkedin"
-              to="/"
+              to={{ pathname: "https://www.linkedin.com/in/beth-spencer-2b374a1b5/" }}
               target="_blank"
               aria-label="LinkedIn"
             >
@@ -28,7 +30,7 @@ function Footer() {
 
             <Link
               class="social-icon-link resume"
-              to="/"
+              to={{ pathname: "https://docs.google.com/document/d/1JurMSqNpH8hxgIglYqMAEghjkCvE_zAO-jFe-nAYCQ0/edit?usp=sharing" }}
               target="_blank"
               aria-label="Resume"
             >
@@ -37,6 +39,7 @@ function Footer() {
           </div>
         </div>
       </section>
+      <div className="contact">&copy; 2021 Beth Spencer &bull; (620) 605-2613 &bull; beth.spencer88@icloud.com</div>
     </div>
   );
 }

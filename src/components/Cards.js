@@ -10,30 +10,30 @@ function Cards() {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
-              src='images/img-9.jpg'
+              src='images/viralsupporthomepage.png'
               text='Application that provides non-biased information and resources for COVID-19.'
               label='Viral Support'
-              path='/portfolio'
+              path={{ pathname: "https://github.com/bspencer181/ViralSupport" }}
             />
             <CardItem
-              src='images/img-2.jpg'
+              src='images/P2.png'
               text='Type in a video game title to view images, ratings, descriptions, and more!'
               label='Game Data Finder'
-              path='/portfolio'
+              path={{ pathname: "https://github.com/bspencer181/GameDataFinder" }}
             />
           </ul>
           <ul className='cards__items'>
             <CardItem
-              src='images/img-3.jpg'
+              src='images/budget.jpg'
               text='Application that tracks online and offline expenses.'
               label='Budget Tracker'
-              path='/portfolio'
+              path={{ pathname: "https://github.com/bspencer181/BudgetTracker"}}
             />
             <CardItem
-              src='images/img-4.jpg'
+              src='images/password.jpg'
               text='Generate a random password using letters, upper/lowercase numbers, and symbols.'
               label='Random Password Generator'
-              path='/portfolio'
+              path={{ pathname: "https://github.com/bspencer181/RandomPasswordGenerator" }}
             />
           </ul>
         </div>

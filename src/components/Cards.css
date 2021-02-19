@@ -1,6 +1,5 @@
 .cards {
     padding: 4rem;
-    background: #fff;
   }
   
   h1 {
@@ -14,6 +13,7 @@
     max-width: 1120px;
     width: 90%;
     margin: 0 auto;
+    
   }
   
   .cards__wrapper {
@@ -23,6 +23,7 @@
   
   .cards__items {
     margin-bottom: 24px;
+    
   }
   
   .cards__item {
@@ -30,6 +31,7 @@
     flex: 1;
     margin: 0 1rem;
     border-radius: 10px;
+    
   }
   
   .cards__item__link {
@@ -66,7 +68,7 @@
     font-size: 20px;
     font-weight: 700;
     color: #fff;
-    background-color: #1f98f4;
+    background-color: black;
     box-sizing: border-box;
   }
   
@@ -91,6 +93,7 @@
   
   .cards__item__info {
     padding: 20px 30px 30px;
+    background:#fff
   }
   
   .cards__item__text {
